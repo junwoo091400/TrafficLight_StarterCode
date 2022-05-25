@@ -13,9 +13,9 @@ Rectangle {
 
     /* The semaphore should also be able to notify the application about particular user's
        interactions. For instance when the user clicks in the lights or in the background. The
-       corresponding behavior on user input should not be tight to the semaphore itself. When the
+       corresponding behavior on user input should not be tied to the semaphore itself. When the
        user clicked somewhere in the semaphore just emit a signal and then everyone interested in
-       the even will be able to react accordingly.
+       the event will be able to react accordingly.
     */
 
 
