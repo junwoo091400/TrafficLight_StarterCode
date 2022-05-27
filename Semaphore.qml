@@ -9,6 +9,7 @@ Rectangle {
 
     function advanceState() {
         state++
+        console.log(state)
         if(state > 2)
             state = 0
     }
@@ -29,8 +30,10 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
 
-        onClicked: advanceState()
-        z: 1000
+        onClicked: {
+            console.log("clicked")
+            advanceState()
+        }
     }
 
     ColumnLayout {
@@ -45,7 +48,7 @@ Rectangle {
             width: height
             radius: height / 2
 
-            color: state == 0 ? "red" : "darkred"
+            color: _root.state == 0 ? "red" : "darkred"
 
         }
 
@@ -54,7 +57,7 @@ Rectangle {
             width: height
             radius: height / 2
 
-            color: state == 1 ? "gold" : "goldenrod"
+            color: _root.state == 1 ? "gold" : "goldenrod"
 
         }
 
@@ -63,7 +66,7 @@ Rectangle {
             width: height
             radius: height / 2
 
-            color: state == 2 ? "green" : "darkgreen"
+            color: _root.state == 2 ? "green" : "darkgreen"
 
         }
 
