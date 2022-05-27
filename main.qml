@@ -30,6 +30,8 @@ ApplicationWindow {
                     2 - the ability to be driven from the code
                     3 - the ability to be driven based on the user's input
                 */
+
+                height: 150
             }
             Semaphore {
                 id: _semaphore2
